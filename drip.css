@@ -56,7 +56,7 @@ img{max-width:100%;display:inline-block}
 .h4{letter-spacing:normal;text-transform:none;margin-top:20px;margin-bottom:20px;font-family:calluna,sans-serif;font-size:32px;font-weight:700;line-height:1.2em}
 .h5{letter-spacing:normal;text-transform:none;margin-top:20px;margin-bottom:20px;font-family:calluna,sans-serif;font-size:28px;font-weight:700;line-height:1.2em}
 .h6{letter-spacing:.1em;text-transform:uppercase;margin-top:20px;margin-bottom:20px;font-family:"Overpass Mono",sans-serif;font-size:20px;font-weight:700;line-height:1.2em}
-.sh{letter-spacing:-.02em;text-transform:none;margin-top:20px;margin-bottom:20px;font-family:"Overpass Mono",sans-serif;font-size:62px;font-weight:700;line-height:1em}
+.sh{letter-spacing:-.02em;text-transform:none;margin-top:20px;margin-bottom:20px;font-family:"Overpass Mono",sans-serif;font-size:62px;font-weight:700;line-height:1em;color:#232426;}
 .super-card-name{z-index:1;margin-bottom:-36px;padding-left:10%;padding-right:5%;position:relative}
 .super-card-title{z-index:2;margin-top:-80px;padding-left:260px}
 .no-mrg{margin:0}
@@ -752,7 +752,7 @@ content: ""; /* Required for pseudo-elements */
 
 .holler-neon-pulse:hover {
   background:none;
-  border: 2px solid #eff;
+  border: 2px solid #d5fdff;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(213, 253, 255, 0.3);
   overflow: visible;
@@ -763,7 +763,7 @@ content: ""; /* Required for pseudo-elements */
   content: "";
   position: absolute;
   inset: -4px;
-  border: 2px solid #eff;
+  border: 2px solid #d5fdff;
   border-radius: inherit;
   animation: pulseOut 2s ease-out infinite;
   opacity: 0;
