@@ -708,7 +708,7 @@ content: ""; /* Required for pseudo-elements */
 }
 
 #outro {
-	background: url('./img/intBgOutro-01.svg') no-repeat center top, #584098; 
+	background: url('./img/intBgOutro.svg') no-repeat center top, #584098; 
 	background-size: auto 80%; 
 	color:#d5fdff;
 }
