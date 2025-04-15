@@ -35,20 +35,31 @@
 <div class="nb-fixed-top-right">
 	<div class="off-brian"></div>
 </div>
+<a href="#">
 <div class="nb-fixed-left">
 <img src="./img/logotypeSam.svg" height="21px"> 
 </div>
-<div class="nb-fixed-right">
-	<div class="interim-menu-box">logofolio</div>
-	<div class="interim-menu-box">about</div>
-	<div class="interim-menu-box">contact</div>
-	<div class="interim-spacer"></div>
-	<div class="interim-menu-box">b-sides</div>	
-
+</a>
+<div class="nb-fixed-right" style="visibility: visible; right:24px;">
+	<div class="interim-menu-box" onclick="document.location='./logo.html'">logofolio</div>
+	<div class="interim-menu-box" style="display: none;" onclick="openCity('London')">about</div>
+	<div class="interim-menu-box" onclick="openCity('Paris')">contact</div>
+	<div class="interim-spacer" style="display: none;"></div>
+	<div class="interim-menu-box" style="display: none;">b-sides</div>	
 </div>
 
+<!-- with 'button'
+<div class="nb-fixed-right" style="visibility: visible;">
+    <button class="interim-menu-box"  onclick="document.location='./logo.html'">logofolio</button>
+    <button class="interim-menu-box" onclick="openCity('London')">about</button>
+    <button class="interim-menu-box" onclick="openCity('Paris')">contact</button>
+    <div class="interim-spacer"></div>
+    <button class="interim-menu-box">b-sides</button> 
+</div>
+-->
+
 <div class="nb-fixed-bottom-center"> 
-<div><a href="#">
+<div><a href="./index.html">
 	<div id="finch-house">
 		<svg version="1.1" id="finch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 viewBox="0 0 96 96" style="enable-background:new 0 0 96 96;" xml:space="preserve" width="104px" height="104px">
@@ -419,7 +430,7 @@
 		</div>
 	</div></div>
 					
-<!-- slides container -->
+<!-- card container -->
 
 					<div class="color-track dark-bg w-dyn-list">
 						<div role="list" class="scroll-path w-dyn-items">
@@ -482,7 +493,7 @@
 		
 </div></div>
 
-<!-- card 4, coda -->
+<!-- slide 4, coda -->
 <div role="listitem" class="scroll-frame sticky w-dyn-item">
 	<div style="background-color:#de176f;color:#ffe1ee" class="super-card-frame nb-centre">
 		
@@ -812,25 +823,22 @@
 </div>
 
 <!-- outro -->
-					<div role="listitem" class="scroll-frame sticky w-dyn-item">
-						<div id="outro" class="super-card-frame nb-centre">
-							<div class="dales-trailz fromTop" id="end-trail">
-								<div class="kids-quesadilla" style="top:-10%">scroll no further</div>
-								<div class="baked-bean-bar" style="bottom: -60%;">
-									<img src="./img/inthandend.svg"  style="opacity: 0.6;" width="72px" height="72px">
-								</div>
-							</div>
-<div id="the-end">[the end]</div>
-
-<a href="#">
-<div class="holler-btn holler-neon-pulse">
-<img class="handwave" src="./img/inthandwave.svg" width="72px" height="72px">
+<div role="listitem" class="scroll-frame sticky w-dyn-item">
+	<div id="outro" class="super-card-frame nb-centre">
+		<div class="dales-trailz fromTop" id="end-trail">
+			<div class="kids-quesadilla" style="top:-10%">scroll no further</div>
+			<div class="baked-bean-bar" style="bottom: -60%;">
+				<img src="./img/inthandend.svg"  style="opacity: 0.6;" width="72px" height="72px">
+			</div>
+		</div>
+		<div id="the-end">[the end]</div>
+		<div class="holler-btn holler-neon-pulse" onclick="openCity('Paris')">
+			<img class="handwave" src="./img/inthandwave.svg" width="72px" height="72px">
+		</div>
+		<div id="holler-caption">[say hello]</div>
+		<div id="outro-overlap"></div>
+	</div>
 </div>
-</a>
-<div id="holler-caption">[say hello]</div>
-
-<div id="outro-overlap"></div>
-</div></div>
 
 </div>
 </div>
@@ -840,7 +848,7 @@
 <div class="footer-wrap">
 	
 	<div class="footer-chunks">
-		<div class="label chunk-text"><a href="#" aria-current="page">hey@hyperdog.cc</a></div>
+		<div class="label chunk-text"><a href="mailto:hey@hyperdog.cc">hey@hyperdog.cc</a></div>
 	</div>
 
 	<div class="footer-chunks">
@@ -855,6 +863,118 @@
 </div>
 
 </div></div></div></div>
+
+<!-- aboot tab -->
+<div id="London" class="city fromRight" style="display:none">
+	<span onclick="this.parentElement.style.display='none'" class="big-peenz">&times;</span>
+	<div class="litter-gang">
+	<h2>London</h2>
+	<p>London is the capital city of England.</p>
+	</div>
+</div>
+
+<!-- contact tab -->
+<div id="Paris" class="city fromRight" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="big-peenz">&times;</span>
+  <div class="litter-gang">
+ 
+    <form method="POST" id="form">
+        <input type="hidden" name="access_key" value="8ea29f7a-b002-4996-9ccb-b50445e66e67">
+        <!--
+        <label>uw naam</label>
+        <input type="text" name="name" required>
+        <label>uw email</label>
+        <input type="email" name="email" required>
+        <label>uw bericht</label>
+        <textarea name="message" required></textarea>
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <button type="submit">bestuur</button>
+    -->
+        <div id="result" style="color: firebrick; background-color: #000;"></div>
+    
+<div class="form-row">
+            <div class="input-data">
+               <input type="text" name="name" required>
+               <div class="underline"></div>
+               <label for="">Your name</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" name="email" required>
+               <div class="underline"></div>
+               <label for="">Email address</label>
+            </div>
+         </div>
+         <div class="form-row">
+         <div class="input-data textarea">
+            <textarea rows="8" name="message" required></textarea>
+            <br />
+            <div class="underline"></div>
+            <label for="">Write your message</label>
+            <div class="form-row submit-btn">
+               <div class="input-data">
+                  <div class="inner"></div>
+                  <input type="submit" value="submit">
+               </div>
+            </div>
+
+</form>
+
+    <script>
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+      result.innerHTML = "Please wait..."
+
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = "Message sent";
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Something went wrong!";
+            })
+            .then(function() {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 3000);
+            });
+    });
+    </script>
+	</div>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
 
 </body>
 </html>
